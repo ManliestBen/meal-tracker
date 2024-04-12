@@ -1,8 +1,35 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: darkgray;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 16px;
 }
 
 a {
-  color: #00B7FF;
+  font-size: 24px;
+  color: #1d2b30;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.title-container {
+  font-size: 32px;
+}
+
+.card-container {
+  margin-top: 40px;
+  height: 85%;
+  width: 95%;
+  border: 1px solid black;
 }
