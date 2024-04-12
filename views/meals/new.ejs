@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="title-container">Meal Planner</div>
+    <div class="link-container">
+      <a href="/meals">Meal List</a>
+      <a href="/meals/new">Add a Meal</a>
+    </div>
+  </nav>
+  <form class="form-container" action="/meals" method="POST">
+    <h1>Add a Meal</h1>
+    <input type="text" name="name" placeholder="Meal Name">
+    <input type="text" name="photo" placeholder="Photo URL">
+    <label for="type">Type:
+      <select name="type" id="type">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Snack">Snack</option>
+      </select>
+    </label>
+    <textarea placeholder="Enter ingredients separated with a comma" name="ingredients"cols="30" rows="10"></textarea>
+    <textarea name="instructions" cols="30" rows="10" placeholder="Instructions"></textarea>
+    <button type="submit">Add Meal</button>
+  </form>
+</body>
+</html>
