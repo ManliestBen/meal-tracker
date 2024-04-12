@@ -30,10 +30,24 @@ function create(req, res) {
   })
 }
 
+function show(req, res) {
+  Meal.findById(req.params.mealId)
+  .then(meal => {
+    res.render('meals/show', {
+      meal: meal
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 
 
 export {
   index,
   newMeal as new,
-  create
+  create,
+  show
 }

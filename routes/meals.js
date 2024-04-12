@@ -9,6 +9,9 @@ router.get('/', mealsCtrl.index)
 // GET localhost:3000/meals/new
 router.get('/new', mealsCtrl.new)
 
+// GET localhost:3000/meals/:mealId
+router.get('/:mealId', mealsCtrl.show)
+
 // POST localhost:3000/meals
 router.post('/', mealsCtrl.create)
 

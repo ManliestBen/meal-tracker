@@ -16,10 +16,12 @@
   </nav>
   <div class="card-container">
     <% meals.forEach(meal => { %>
-      <div class="meal-card">
-        <h2><%= meal.name %></h2>
-        <img class="meal-image" src="<%= meal.photo %>" alt="A picture of this tasty meal">
-      </div>
+      <a href="/meals/<%= meal._id %>">
+        <div class="meal-card">
+          <h2><%= meal.name %></h2>
+          <img class="meal-image" src="<%= meal.photo %>" alt="A picture of this tasty meal">
+        </div>
+      </a>
     <% }) %>
   </div>
 </body>

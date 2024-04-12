@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="title-container">Meal Planner</div>
+    <div class="link-container">
+      <a href="/meals">Meal List</a>
+      <a href="/meals/new">Add a Meal</a>
+    </div>
+  </nav>
+  <div class="details-container">
+    <h1><%= meal.name %></h1>
+    <img class="details-photo" src="<%= meal.photo %>" alt="A picture of a tasty meal">
+    <h3>A great meal to have for <%= meal.type %>!</h3>
+    <h2>Ingredients:</h2>
+    <ul>
+      <% meal.ingredients.forEach(ingredient => { %>
+        <li><%= ingredient %></li>
+      <% }) %>
+    </ul>
+    <h3>Instructions:</h3>
+    <p><%= meal.instructions %></p>
+  </div>
+</body>
+</html>
