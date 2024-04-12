@@ -15,7 +15,12 @@
     </div>
   </nav>
   <div class="card-container">
-    
+    <% meals.forEach(meal => { %>
+      <div class="meal-card">
+        <h2><%= meal.name %></h2>
+        <img class="meal-image" src="<%= meal.photo %>" alt="A picture of this tasty meal">
+      </div>
+    <% }) %>
   </div>
 </body>
 </html>

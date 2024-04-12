@@ -28,6 +28,9 @@ a {
 }
 
 .card-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
   margin-top: 40px;
   height: 85%;
   width: 95%;
@@ -37,6 +40,7 @@ a {
 .form-container {
   /* border: 1px solid black; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -53,4 +57,18 @@ button {
   border: none;
   font-size: 16px;
   padding: 12px;
+}
+
+.meal-image {
+  width: 200px;
+}
+
+.meal-card {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
 }

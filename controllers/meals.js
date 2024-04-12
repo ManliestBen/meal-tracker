@@ -3,6 +3,7 @@ import { Meal } from "../models/meal.js"
 function index(req, res) {
   Meal.find({})
   .then(meals => {
+    console.log(meals)
     res.render('meals/index', {
       meals: meals
     })
